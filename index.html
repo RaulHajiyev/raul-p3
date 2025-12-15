@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют онлайн</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="bank a" />
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">БАНК</a>
+                <a href="#" class="nav-link">БИЗНЕС</a>
+                <a href="#" class="nav-link">ИНВЕСТИЦИИ</a>
+                <a href="#" class="nav-link">СТРАХОВАНИЕ</a>
+                <a href="#" class="nav-link">МОБАЙЛ</a>
+                <a href="#" class="nav-link">ПУТЕШЕСТВИЯ</a>
+                <a href="#" class="nav-link">РАЗВЛЕЧЕНИЯ</a>
+            </div>
+            <button class="login-btn">ВОЙТИ</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="title">Конвертер валют онлайн</h1>
+        
+        <div class="converter-container">
+            <!-- Left Panel -->
+            <div class="converter-panel">
+                <label class="panel-label">У меня есть</label>
+                <div class="currency-buttons">
+                    <button class="currency-btn active" data-currency="RUB">RUB</button>
+                    <button class="currency-btn" data-currency="USD">USD</button>
+                    <button class="currency-btn" data-currency="EUR">EUR</button>
+                    <button class="currency-btn" data-currency="GBP">GBP</button>
+                </div>
+                <input type="text" class="amount-input" id="leftAmount" value="5000" />
+                <div class="exchange-rate" id="leftRate">1 RUB = 0.0135 USD</div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="converter-panel">
+                <label class="panel-label">Хочу приобрести</label>
+                <div class="currency-buttons">
+                    <button class="currency-btn" data-currency="RUB">RUB</button>
+                    <button class="currency-btn active" data-currency="USD">USD</button>
+                    <button class="currency-btn" data-currency="EUR">EUR</button>
+                    <button class="currency-btn" data-currency="GBP">GBP</button>
+                </div>
+                <input type="text" class="amount-input" id="rightAmount" value="0" />
+                <div class="exchange-rate" id="rightRate">1 USD = 73.8896 RUB</div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
